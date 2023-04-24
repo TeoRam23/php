@@ -1,0 +1,219 @@
+h1, h2, h3, h4, p, th, td, a, button, input, label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(37, 110, 33);
+}
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border-style: solid;
+    padding: 10px;
+    border-width: 2px;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    border-style: solid;
+    border-color: rgb(29, 85, 26);
+}
+
+.rød_text {
+    color: red;
+}
+
+.content {
+    margin: 0px;
+    height: fit-content;
+    min-height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(223, 255, 243);
+    
+}
+
+input, button {
+    border-style: solid;
+    border-color: rgb(29, 85, 26);
+}
+
+.topp {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    min-height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(58, 171, 52);
+    
+}
+
+
+.knapp {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 42px;
+    background-color: rgb(98, 190, 255);
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(37, 110, 33);
+    
+    
+}
+
+.knapp:hover {
+    background-color: rgb(128, 202, 255);
+    animation: sizer 0.05s linear forwards;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    color: rgb(0, 0, 0)
+}
+.profilprofilbilde {
+
+    border-radius: 50%;
+    height: 100px;
+}
+.profilbilde {
+    border-radius: 50%;
+    height: 80px;
+}
+.profilbilde:hover {
+    animation: sizer_profil 0.1s linear forwards;
+
+}
+
+.bilde_div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bilder {
+    margin: 10px;
+    height: 200px;
+}
+
+.bildevisning {
+    max-height: 400px;
+    max-width: 90%;
+}
+
+.legg_ut {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+
+}
+
+.innlegg {
+    width: 80%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+
+
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(167, 218, 255);
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(37, 110, 33);
+}
+
+.kommentar {
+    
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: rgba(0, 0, 0, 0.178);
+}
+
+.breaker {
+    word-break: break-word;
+}
+
+.registrer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(167, 218, 255);
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(37, 110, 33);
+}
+
+.registrer_button {
+    align-self: flex-end;
+    margin-top: -37.1px;
+}
+.login_button {
+    align-self: flex-end;
+    margin-top: -55.4px;
+}
+
+
+.profil_spin {
+    border-radius: 50%;
+    height: 100px;
+    animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sizer {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        transform: scale(110%);
+    }
+}
+@keyframes sizer_profil {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        transform: scale(105%);
+    }
+}
+
+
